@@ -86,3 +86,22 @@ for (let i = 0;i<number;i++){
 };
 
 
+
+function quastionAnswer(quastion, yesAnswer, noAnswer)
+ {
+ let quastionAnswer ;
+ do {
+   quastionAnswer = prompt (quastion);
+ } while (quastionAnswer !== "yes" && quastionAnswer !== "y",quastionAnswer !== "no" && quastionAnswer !== "n" );  
+ if (quastionAnswer === "yes" || quastionAnswer=== "Y") {
+   console.log(yesAnswer);
+ } else {
+   console.log(noAnswer);
+ }
+}
+
+quastionAnswer("do i like pizza with painapple ?","correct","not correct");
+quastionAnswer("do i like gaming?","correct","not correct");
+quastionAnswer("do i rage so fast ?","correct","not correct");
+quastionAnswer("do i like pizza with painapple ?","correct","not correct");
+quastionAnswer("do you think iam afraid from heights?","correct","not correct");
